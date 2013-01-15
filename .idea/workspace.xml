@@ -41,7 +41,17 @@
         <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
+              <folding>
+                <marker date="1358263759000" expanded="true" signature="99:254" placeholder="..." />
+                <marker date="1358263759000" expanded="true" signature="178:245" placeholder="..." />
+                <marker date="1358263759000" expanded="true" signature="284:437" placeholder="..." />
+                <marker date="1358263759000" expanded="true" signature="362:428" placeholder="..." />
+                <marker date="1358263759000" expanded="true" signature="467:620" placeholder="..." />
+                <marker date="1358263759000" expanded="true" signature="546:611" placeholder="..." />
+                <marker date="1358263759000" expanded="true" signature="650:811" placeholder="..." />
+                <marker date="1358263759000" expanded="true" signature="730:802" placeholder="..." />
+                <marker date="1358263759000" expanded="true" signature="841:1019" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,16 +86,25 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="62" selection-start="372" selection-end="372" vertical-scroll-proportion="-8.125">
+            <state line="13" column="55" selection-start="427" selection-end="427" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="10" selection-start="410" selection-end="410" vertical-scroll-proportion="0.16974169">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="57" selection-start="916" selection-end="916" vertical-scroll-proportion="0.36382115">
+            <state line="56" column="0" selection-start="2188" selection-end="2188" vertical-scroll-proportion="-7.18">
               <folding />
             </state>
           </provider>
@@ -110,18 +129,18 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/bootstrap.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap_and_overrides.css.less" />
         <option value="$PROJECT_DIR$/vendor/assets/stylesheets/simplex.css" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/posts/show.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/post.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130115152731_create_posts.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -736,13 +755,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="44" selection-start="336" selection-end="336" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -771,27 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="62" selection-start="372" selection-end="372" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="534" selection-end="534" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/show.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="125" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="26" selection-start="771" selection-end="771" vertical-scroll-proportion="0.0">
@@ -809,6 +800,23 @@
     <entry file="file://$PROJECT_DIR$/app/views/posts/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1358263759000" expanded="true" signature="99:254" placeholder="..." />
+            <marker date="1358263759000" expanded="true" signature="178:245" placeholder="..." />
+            <marker date="1358263759000" expanded="true" signature="284:437" placeholder="..." />
+            <marker date="1358263759000" expanded="true" signature="362:428" placeholder="..." />
+            <marker date="1358263759000" expanded="true" signature="467:620" placeholder="..." />
+            <marker date="1358263759000" expanded="true" signature="546:611" placeholder="..." />
+            <marker date="1358263759000" expanded="true" signature="650:811" placeholder="..." />
+            <marker date="1358263759000" expanded="true" signature="730:802" placeholder="..." />
+            <marker date="1358263759000" expanded="true" signature="841:1019" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="2188" selection-end="2188" vertical-scroll-proportion="-7.18">
           <folding />
         </state>
       </provider>
@@ -820,9 +828,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="57" selection-start="916" selection-end="916" vertical-scroll-proportion="0.36382115">
+        <state line="0" column="125" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="534" selection-end="534" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="55" selection-start="427" selection-end="427" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="10" selection-start="410" selection-end="410" vertical-scroll-proportion="0.16974169">
           <folding />
         </state>
       </provider>
