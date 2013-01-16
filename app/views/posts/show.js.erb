@@ -1,1 +1,4 @@
-$("#videoArea").html('<%= escape_javascript(render :template => "posts/show", :formats => [:html], :handlers => [:erb]) %>');
+$("#videoArea").html('<%= escape_javascript(render :template => "posts/show",
+                                                   :formats => [:html],
+                                                   :handlers => [:erb],
+                                                   :object => @disqus) %>');

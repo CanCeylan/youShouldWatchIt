@@ -15,16 +15,19 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @post.update_attribute('click', @post.click + 1)
+    @disqus = false
 
     if @post.url.include? 'youtube'
       @video_id = (/([\w-]{11})/.match(@post.url)).to_s
-      @embed_code = "<iframe width='512' height='288' src='http://www.youtube.com/embed/#{@video_id}' frameborder='0' allowfullscreen></iframe>"
+      @embed_code = "<iframe width='512' height='288' src='http://www.youtube.com/embed/#{@video_id}' autoplay frameborder='0' allowfullscreen></iframe>"
     else
-      @embed_code = "<iframe width='512' height='288' src='#{@post.url}' frameborder='0' allowfullscreen></iframe>"
+      @embed_code = "<iframe width='512' height='288' src='#{@post.url}' frameborder='0'></iframe>"
     end
 
+    request.xhr?
+
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { @disqus = true }
       format.js { render :layout => false }
     end
   end
