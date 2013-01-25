@@ -11,6 +11,17 @@
       <dl class="dl-horizontal">
         <%= raw(@embed_code) %>
       </dl>
+      <legend>Share</legend>
+      <input type="text"  placeholder="Wanna Share ?" value="<%= post_url(@post)%>" size="90">
+      <a title="<%= @post.name %>"   href="http://www.facebook.com/sharer.php?u=<%= post_url(@post) %>&t=my custom title"
+         target="_blank">
+        <img src="http://www.smartinsights.com/wp-content/uploads/2012/06/facebook-share-icon.gif"
+             alt="Share on Facebook" />
+      </a>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-url="youshouldwatch.it" data-text="<%= @post.name + ' - ' +post_url(@post) %> " data-count="horizontal" data-via="ocanceylan">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+
+
     </div>
     <% if @disqus %>
     <div class="span6" id="disqus">
@@ -23,7 +34,7 @@
           (function() {
               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
               dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0  ]).appendChild(dsq);
           })();
       </script>
       <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -36,16 +47,20 @@
 
 
 
+<% if user_signed_in? %>
+    <span class='st_facebook_vcount' displayText='Facebook'></span>
+    <span class='st_twitter_vcount' displayText='Tweet'></span>
+    <span class='st_email_vcount' displayText='Email'></span>
+    <div class="form-actions">
+      <%= link_to t('.back', :default => t("helpers.links.back")),
+                  posts_path, :class => 'btn'  %>
+      <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                  edit_post_path(@post), :class => 'btn' %>
+      <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                  post_path(@post),
+                  :method => 'delete',
+                  :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                  :class => 'btn btn-danger' %>
+    </div>
 
-
-<div class="form-actions">
-  <%= link_to t('.back', :default => t("helpers.links.back")),
-              posts_path, :class => 'btn'  %>
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_post_path(@post), :class => 'btn' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              post_path(@post),
-              :method => 'delete',
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-              :class => 'btn btn-danger' %>
-</div>
+<% end %>
