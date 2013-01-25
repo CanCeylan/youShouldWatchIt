@@ -8,7 +8,7 @@
       <!--<th>< %= model_class.human_attribute_name(:id) %></th>-->
       <th><%= model_class.human_attribute_name(:name) %></th>
       <!--<th>< %= model_class.human_attribute_name(:url) %></th>-->
-      <th><%= model_class.human_attribute_name(:desc) %></th>
+      <!--<th>< %= model_class.human_attribute_name(:desc) %></th>-->
       <th><%= model_class.human_attribute_name(:click) %></th>
       <% if user_signed_in? %>
         <th><%=t '.actions', :default => 'Share' %></th>
@@ -21,7 +21,7 @@
         <!--<td>< %= link_to post.id, post_path(post) %></td>-->
         <td><%= link_to post.name, post_path(post), :remote => true %></td>
         <!--<td>< %= post.url %></td>-->
-        <td><%= post.desc %></td>
+        <!--<td>< %= post.desc %></td>-->
         <td><%= post.click %></td>
         <!--<td>< %=l post.created_at %></td>-->
         <% if user_signed_in? %>
