@@ -12,10 +12,10 @@
         <%= raw(@embed_code) %>
       </dl>
       <legend>Share</legend>
-      <input type="text"  placeholder="Wanna Share ?" value="<%= post_url(@post)%>" size="90">
-      <a title="<%= @post.name %>"   href="http://www.facebook.com/sharer.php?u=<%= post_url(@post) %>&t=my custom title"
+      <input type="text"  placeholder="Wanna Share ?" value="<%= post_url(@post)%>">
+      <a title="<%= @post.name %>"   href="http://www.facebook.com/sharer.php?u=<%= post_url(@post) %>&t=<%= @post.name %>&p=<%= @post.name %>"
          target="_blank">
-        <img src="http://www.smartinsights.com/wp-content/uploads/2012/06/facebook-share-icon.gif"
+        <img src="https://www.horizoninteractiveawards.com/assets/images/pages/facebook_share_icon.gif"
              alt="Share on Facebook" />
       </a>
       <a href="http://twitter.com/share" class="twitter-share-button" data-url="youshouldwatch.it" data-text="<%= @post.name + ' - ' +post_url(@post) %> " data-count="horizontal" data-via="ocanceylan">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
@@ -48,9 +48,6 @@
 
 
 <% if user_signed_in? %>
-    <span class='st_facebook_vcount' displayText='Facebook'></span>
-    <span class='st_twitter_vcount' displayText='Tweet'></span>
-    <span class='st_email_vcount' displayText='Email'></span>
     <div class="form-actions">
       <%= link_to t('.back', :default => t("helpers.links.back")),
                   posts_path, :class => 'btn'  %>
